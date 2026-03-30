@@ -1,0 +1,172 @@
+/* General Styling for Form Elements */
+form {
+    width: 50%;
+    margin: 0 auto;
+    /* Center the form on the page */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Styling for input fields, select dropdowns, and textareas */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0; 
+    padding: 12px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    /* Rounded corners */
+    box-sizing: border-box;
+background-color: #f3f3f3;
+    
+background-color: #ccc;
+    font-size: 16px;
+}
+
+/* Styling for Radio and Checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Arrange Radio Buttons and Checkboxes on a Single Line */
+.inline-input,
+.inline-label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Styling for Select Dropdown */
+select {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: #f0f8ff;
+}
+
+/* Hover and Focus Effects */
+input:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #e9f1fb;
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button[type="reset"] {
+    background-color: #ff6666;
+}
+
+button[type="reset"]:hover {
+    background-color: #cc0000;
+}
+
+/* -------------------------------- */
+/* Optional Google Fonts (uncomment to use) */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Georgia:ital,wght@0,400;0,700;1,400&display=swap'); */
+
+/* -------------------------------- */
+/* Font Properties and Text Utilities */
+/* -------------------------------- */
+/* CSS variables for easy updates */
+:root {
+    --ui-font: "Arial", "Helvetica", sans-serif;
+    --serif-font: "Georgia", serif;
+    --base-font-size: 16px;
+    --heading-size: 36px;
+}
+
+/* Global body font */
+body {
+    /* Default to a neutral readable font, with fallbacks */
+    font-family: var(--ui-font);
+    font-size: var(--base-font-size);
+    line-height: 1.5;
+    color: #222222;
+}
+
+/* Headings & Intro text */
+.main-heading {
+    font-family: var(--ui-font); /* Configurable UI font */
+    font-size: var(--heading-size);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.intro {
+    font-family: var(--serif-font);
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+/* Text Decoration */
+.overline {
+    text-decoration: overline;
+    color: #333333;
+}
+
+.underline {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: #0056b3;
+}
+
+/* Text Alignment */
+.center-text {
+    text-align: center;
+}
+
+/* Text Shadow */
+.shadow-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Text Transform */
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.fontSize120 {
+    font-size: 120px;
+}
+
+/* Utility: small text variant for form hints */
+.small-text {
+    font-size: 0.85rem;
+    color: #555;
+}
